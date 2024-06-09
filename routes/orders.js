@@ -298,7 +298,7 @@ router.post("/", authenticateToken, async (req, res) => {
                             mybinance_response = response.data;
                         })
                         .catch((error) => console.log(error));
-                } else if (req.body.pay_with == "points") {
+                } else if (req.body.pay_with == "points" && req.body.countryId != "6332a4cdfe9b8e512af37e15") {
                     try {
                         let pointsToRemove = parseInt(total_price * process.env.POINTS_USD);
 
