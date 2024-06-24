@@ -612,7 +612,7 @@ async function getOrdersByDate(req, res, next) {
     all_orders = await Orders.find({
       branchId: managerBranch,
       status: "SUCCESS",
-    }).populate("userId", ["name", "email", "type"]);
+    }).populate("userId", ["name", "email", "type", "cloverId"]);
     if (all_orders == null) {
       return res.status(400).json({ message: "No orders available" });
     } else {

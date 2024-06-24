@@ -6,7 +6,6 @@ Content-Type: application/json
 }
 
 ###
-
 GET http://localhost:3000/admin
 
 ###
@@ -1050,7 +1049,7 @@ Content-Type: application/json
 
 {
     "username": "canada_manager",
-    "password": "jrb&d22mce",
+    "password": "123",
     "branch": "63d96d762be916f511764073"
 }
 
@@ -1073,7 +1072,7 @@ Content-Type: application/json
 
 {
     "managerId": "63b9449a81011df3f388f4f1",
-    "date": "2023-01-07" 
+    "date": "2023-01-07"
 }
 
 ###
